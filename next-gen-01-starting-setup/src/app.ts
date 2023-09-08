@@ -53,3 +53,12 @@ const person = {
 };
 
 const copiedPerson = { ...person };
+
+const addRest = (...numbers: number[]) => {
+  return numbers.reduce((curResult, curValue) => {
+    return curResult + curValue;
+  }, 0);
+};
+
+const addedNumbers = addRest(5, 10, 2, 3.7);
+console.log(addedNumbers);
