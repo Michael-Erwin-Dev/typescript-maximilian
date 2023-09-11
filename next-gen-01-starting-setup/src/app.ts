@@ -1,9 +1,9 @@
-const userName = "Max";
+// const userName = "Max";
 
-//userName = "Maximilian";
-let age = 30;
+// //userName = "Maximilian";
+// let age = 30;
 
-age = 29;
+// age = 29;
 
 // function add(a: number, b: number) {
 //   let result;
@@ -62,3 +62,9 @@ const addRest = (...numbers: number[]) => {
 
 const addedNumbers = addRest(5, 10, 2, 3.7);
 console.log(addedNumbers);
+
+const [hobby1, hobby2, ...remainingHobbies] = hobbies;
+
+const { firstName: userName, age } = person;
+
+console.log(userName, age, person);
